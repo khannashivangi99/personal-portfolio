@@ -5,6 +5,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('home', HomeView.as_view()),
+    path('ˆ/$', HomeView.as_view()),
     path('download/', include('download_stuff.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
