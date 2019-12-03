@@ -1,0 +1,7 @@
+def fun(a,b):
+	c= a+b
+	return c
+
+def fun(a):
+	c= a*2
+	return c
