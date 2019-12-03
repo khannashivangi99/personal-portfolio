@@ -32,7 +32,7 @@ COPY /code/blog /srv/code/blog
 # Install Python dependencies
 RUN pip3 install -r /srv/code/blog/requirements.txt
 # Port to expose
-EXPOSE 8000
+EXPOSE 80
 # Copy entrypoint script into the image
 WORKDIR /srv/code/blog
 COPY ./docker-entrypoint.sh /
