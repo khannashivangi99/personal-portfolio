@@ -7,6 +7,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', HomeView.as_view()),
-    path('/cv', DownloadCV.as_view()),
+    path('cv/', DownloadCV.as_view()),
     path('download/', include('download_stuff.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
