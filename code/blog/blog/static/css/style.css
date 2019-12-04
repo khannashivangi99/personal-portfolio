@@ -920,7 +920,7 @@ h2.menu-item:after {
 }
 
 .typed-cursor {
-    display: none;
+    display: block;
 }
 
 .menu2 .name-block {
