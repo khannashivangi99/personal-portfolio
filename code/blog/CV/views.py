@@ -11,4 +11,6 @@ class DownloadCV(APIView):
         static_file_path = settings.STATIC_ROOT
         pdf_path = f'{static_file_path}/assets/CV(Arpit Khanna).pdf'
         pdf_data = open(pdf_path, 'rb').read()
-        return HttpResponse(pdf_data, content_type='application/pdf')
+        response = HttpResponse(pdf_data, content_type='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=CV(ArpitKhanna).pdf'
+        return response
